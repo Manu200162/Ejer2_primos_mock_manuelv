@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ejercicio2.NumbersGeneratorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-02-18T03:46:09" hostname="DESKTOP-2T6TAJ9" time="0.064">
+  <properties/>
+  <testcase name="[1] 0" classname="ejercicio2.NumbersGeneratorTest" time="0.028"/>
+  <testcase name="[2] -10" classname="ejercicio2.NumbersGeneratorTest" time="0.001"/>
+  <testcase name="verifyGeneratedNumbers1()" classname="ejercicio2.NumbersGeneratorTest" time="0.021"/>
+  <testcase name="verifyGeneratedNumbers2()" classname="ejercicio2.NumbersGeneratorTest" time="0.001"/>
+  <testcase name="verifyGeneratedNumbers3()" classname="ejercicio2.NumbersGeneratorTest" time="0.002"/>
+  <testcase name="verifyGeneratedNumbers4()" classname="ejercicio2.NumbersGeneratorTest" time="0.001"/>
+  <testcase name="verifyGeneratedNumbers5()" classname="ejercicio2.NumbersGeneratorTest" time="0.002"/>
+  <testcase name="verifyGeneratedNumbers6()" classname="ejercicio2.NumbersGeneratorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

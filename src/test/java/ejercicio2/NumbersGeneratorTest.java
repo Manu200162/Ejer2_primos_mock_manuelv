@@ -12,6 +12,21 @@ public class NumbersGeneratorTest {
 
     PrimoUtil primoUtilMock= Mockito.mock(PrimoUtil.class);
 
+    @ParameterizedTest
+    @CsvSource({
+      "11,true,2 4 6 8 10",
+      "2,true,2",
+      "15,false,1 3 5 7 9 11 13 15"
+    })
+    public void virfyGenerated(int number,boolean result,String expected) throws Exception {
+        Mockito.when(primoUtilMock.esPrimo(number)).thenReturn(result);
+        Generador ge= new Generador(primoUtilMock);
+        String actual=ge.getNumberValues(number);
+        Assertions.assertEquals(expected,actual,"Error el mensaje no es esperado");
+        Mockito.verify(primoUtilMock).esPrimo(number);
+    }
+
+
     @Test
     public void verifyGeneratedNumbers1() throws Exception {
         Mockito.when(primoUtilMock.esPrimo(11)).thenReturn(true);
